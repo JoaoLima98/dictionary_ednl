@@ -28,12 +28,20 @@ private:
     TreeNode* insertRecursive(TreeNode* currentNode, std::string eng, std::string pt, std::string clas);
     void printInOrderRecursive(TreeNode* currentNode);
     TreeNode* searchRecursive(TreeNode* currentNode, std::string eng);
+
+    TreeNode* removeRecursive(TreeNode* currentNode, std::string eng);
+
+    TreeNode* findMin(TreeNode* node);
 public:
     BinarySearchTree();
     
     void insert(std::string eng, std::string pt, std::string clas);
     void printInOrder();
-    void printSelectedWord(std::string eng);
+    void printLevelOrder();
+    bool printSelectedWord(std::string eng);
+
+    void remove(std::string eng);
+    
 };
 
 #endif
